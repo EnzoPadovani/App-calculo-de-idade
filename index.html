@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+  </head>
+  <body>
+    
+    <div class="age-app-card">
+      <form class="form">
+        <div class="form__groups-container">
+          <div class="form__group">
+            <label class="form__label" data-error="false">day</label>
+            <input class="form__input" data-error="false" type="number" id="day" placeholder="DD">
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label class="form__label" data-error="false">month</label>
+            <input class="form__input" data-error="false" type="number" id="month" placeholder="MM">
+            <small class="form__error"></small>
+          </div>
+          <div class="form__group">
+            <label class="form__label" data-error="false">year</label>
+            <input class="form__input" data-error="false" type="number" id="year" placeholder="YYYY">
+            <small class="form__error"></small>
+          </div>
+        </div>
+        <div class="form__submit-container">
+          <hr />
+          <button class="form__submit-button" type="submit">
+            <img src="assets/images/icon-arrow.svg" alt="icon-arrow">
+          </button>
+        </div>
+      </form>
+      <div class="display">
+        <p><span class="display__years">- -</span> years</p>
+        <p><span class="display__months">- -</span> months</p>
+        <p><span class="display__days">- -</span> days</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="github.com/EnzoPadovani">Heynz0</a>.
+    </div>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+  </body>
+</html>
+ 

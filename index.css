@@ -1,0 +1,122 @@
+
+:root{
+    /* colors */
+    --clr-purple: 259, 100%, 65%;
+    --clr-light-red: 0, 100%, 67%;
+    --clr-white: 0, 0%, 100%;
+    --clr-off-white: 0, 0%, 94%;
+    --clr-light-grey: 0, 0%, 86%;
+    --clr-smokey-grey: 0, 1%, 44%;
+    --clr-off-black: 0, 0%, 8%;
+  
+    /* font family */
+    --ff-sans-poppins: "Poppins", sans-serif;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  body {
+    font-family: var(--ff-sans-poppins);
+    background-color: hsl(var(--clr-off-white));
+    line-height: 1.5;
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .age-app-card{
+    background-color: hsl(var(--clr-white));
+    width: 55rem;
+    margin: auto;
+    padding: 2.5rem 4rem;
+    border-radius: 1.5rem 1.5rem 15rem 1.5rem;
+  }
+  
+  .form__groups-container{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form__group{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form__label{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: hsl(var(--clr-smokey-grey));
+  }
+  
+  .form__label[data-error="true"]{
+    color: hsl(var(--clr-light-red));
+  }
+  
+  .form__input{
+    font-family: var(--ff-sans-poppins);
+    font-weight: 700;
+    font-size: 32px;
+    width: 5em;
+    border: hsl(var(--clr-light-grey)) solid 1px;
+    border-radius: .35em;
+    padding: .4em .6em;
+  }
+  
+  .form__input[data-error="true"]{
+    border-color: hsl(var(--clr-light-red));
+  }
+  
+  .form__error{
+    font-weight: 400;
+    font-style: italic;
+    color: hsl(var(--clr-light-red));
+  }
+  
+  .form__submit-container{
+    display: flex;
+    align-items: center;
+  }
+  
+  .form__submit-container > hr{
+    width: 100%;
+    border: hsl(var(--clr-light-grey)) solid 1px;
+  }
+  
+  .form__submit-button{
+    background-color: hsl(var(--clr-purple));
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    padding-inline: 2em;
+    aspect-ratio: 1;
+  }
+  
+  .form__submit-button:hover {
+    background-color: hsl(var(--clr-off-black));
+  }
+  
+  .display{
+    display: flex;
+    flex-direction: column;
+    font-size: 6em;
+    font-style: italic;
+    font-weight: 800;
+  }
+  
+  .display__years,
+  .display__months,
+  .display__days{
+    color: hsl(var(--clr-purple));
+  }
+  
